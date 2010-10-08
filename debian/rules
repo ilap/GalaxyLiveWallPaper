@@ -9,7 +9,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
-DEB_MAKE_CLEAN_TARGET := distclean
+override_dh_auto_configure:
+	[ -e dh_auto_configure ] || ./autogen.sh && dh_auto_configure
+
 %:
 	dh $@ 
+
