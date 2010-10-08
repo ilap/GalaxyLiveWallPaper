@@ -6,6 +6,5 @@ autoreconf -f -i -Wno-portability \
 && aclocal \
 && autoconf \
 && touch AUTHORS NEWS README ChangeLog \
-&& automake --add-missing -a -Wno-portability \
-&& autoconf
+&& automake --add-missing -a -Wno-portability
 
