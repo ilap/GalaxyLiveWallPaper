@@ -3,7 +3,6 @@ Section: x11
 Priority: extra
 Maintainer: ilap <pal.dorogi@gmail.com>
 Build-Depends: debhelper (>= 7.0.50~), autotools-dev, intltool, libgconf2-4, libglib2.0-0, mime-support, gettext, intltool, gconf2, libcroco3, libxml-parser-perl, locales, liborbit2, libpopt0, compiz-fusion-bcop, libgl1-mesa-glx, compiz-dev, libunistring0, libasound2, libexpat1, libpcre3, gawk, libtool
-
 Standards-Version: 3.8.4
 Homepage: https://launchpad.net/ilap/compiz-plugins-livewallpapers/devel
 
