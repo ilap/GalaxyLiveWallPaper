@@ -25,7 +25,7 @@
 				<option type="float" name="particles_size">
 					<short>Size Of Stars</short>
 					<long>Size of stars</long>
-					<default>13.5</default>
+					<default>10</default>
 					<min>0.0</min>
 					<max>64.0</max>
 					<precision>0.5</precision>
@@ -42,9 +42,17 @@
 					<long>Draw a Star with streaks</long>
 					<default>true</default>
 				</option>
+				<option type="float" name="speed_ratio">
+					<short>Speed ratio</short>
+					<long>Speed ratio of the Galaxy</long>
+					<default>1.0</default>
+					<min>0.0</min>
+					<max>3.0</max>
+					<precision>0.1</precision>
+				</option>
 			</group>
 			<group>
-				<short>Rotation</short>
+				<short>Move, Rotate and Zoom</short>
 				<option type="int" name="rotate_x">
 					<short>Rotate X</short>
 					<long>Rotate Galaxy through X coordinate</long>
@@ -69,11 +77,27 @@
 				<option type="float" name="zoom">
 					<short>Zoom in/out</short>
 					<long>Zoom in and out</long>
-					<default>2.0</default>
+					<default>1.5</default>
 					<min>0.0</min>
-					<max>10</max>
+					<max>5.0</max>
 					<precision>0.1</precision>
                                 </option>
+				<option type="float" name="offset_x">
+					<short>Offset X</short>
+					<long>X offset of the centre of Galaxy</long>
+					<default>0.0</default>
+					<min>-2.0</min>
+					<max>2.0</max>
+					<precision>0.005</precision>
+				</option>
+				<option type="float" name="offset_y">
+					<short>Offset Y</short>
+					<long>Y offset of the centre of Galaxy</long>
+					<default>0.0</default>
+					<min>-2.0</min>
+					<max>2.0</max>
+					<precision>0.005</precision>
+				</option>
 			</group>
 			<group>
 				<short>Key Bindings</short>
